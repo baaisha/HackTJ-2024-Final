@@ -5,10 +5,9 @@
     </head>
     <body>
         <div class="tabsContainer">
-            <img src="image.png" alt="Stat Master" usemap="#statmap">
-            <map name="statmap">
-                <area shape="circle" coords="50,50,50">
-            </map>
+            <button class="tab-logo" onclick = "openUnit('unit1')">
+                <img src="logoBetter.png" alt="logo" class = "logo">
+            </button>
             <button class="tab" onclick = "openUnit('unit1')">
                 Unit 1
             </button>
@@ -112,14 +111,46 @@
             </button>
         </div>
         <style>
+            head{
+                background-color: black;
+                color: white;
+            }
+
+            body{
+                background-color: black;
+                color: white;
+            }
             .topic{
+                display:flexbox;
                 width: 700px;
                 height: 70px;
                 font-family: 'Trebuchet MS';
+                
             }
             .tab{
                 width: 235px;
                 height: 50px;
+                background-color: #a2bce8;
+                border: none;
+                border-radius: 4px;
+            }
+            .tab-logo{
+                border: none;
+                border-radius: 4px;
+                background-color: #a2bce8;
+                width: 50px;
+                height: 50px;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin: 0px;
+            }
+            .logo{
+                text-align: center;
+                width: 50px;
+                height: 50px;
+            }
+            .tabsContainer{
+                vertical-align: bottom;
             }
         </style>
         <script>
