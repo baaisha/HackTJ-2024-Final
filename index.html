@@ -36,22 +36,22 @@
         
         <div id="unit1" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
-                Topic 1, 2 (W2D2 KC)
+                Topic 1, 2
             </button>
             <button class="topic" onClick = "openTopic('topic2')">
-                Topic 7, 8, 10 (W3D2 KC)
+                Topic 7, 8, 10
             </button>
             <button class="topic" onClick = "openTopic('topic3')">
-                Topic 9 (W4D2 KC)
+                Topic 9
             </button>
             <button class="topic" onClick = "openTopic('topic4')">
-                SOCS (W4D3 KC)
+                SOCS
             </button>
             <button class="topic" onClick = "openTopic('topic5')">
-                Topic 26, 27 (W5D3 KC)
+                Topic 26, 27
             </button>
             <button class="topic" onClick = "openTopic('topic6')">
-                Topic 28 (W5D3 KC)
+                Topic 28
             </button>
             <h1>Topic 1</h1>
             <div class = "formatted-paragraph-blue">
@@ -91,58 +91,58 @@
         </div>
         <div id="unit2" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
-                Topic 3 (W7D3 KC)
+                Topic 3
             </button>
             <button class="topic" onClick = "openTopic('topic2')">
-                Topic 4 (W8D2 KC)
+                Topic 4
             </button>
             <button class="topic" onClick = "openTopic('topic3')">
-                Topic 5 (W9D1 KC)
+                Topic 5
             </button>
             <button class="topic" onClick = "openTopic('topic4')">
-                Blocking (W9D2 KC)
+                Blocking
             </button>
         </div>
         <div id="unit3" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
-                Intro Vocab/Diagrams (W10D3 KC)
+                Intro Vocab/Diagrams
             </button>
             <button class="topic" onClick = "openTopic('topic2')">
-                ME/Dep/Ind (W11D3 KC)
+                ME/Dep/Ind
             </button>
             <button class="topic" onClick = "openTopic('topic3')">
-                Counting and Theoretical (W12D2 KC)
+                Counting and Theoretical
             </button>
             <button class="topic" onClick = "openTopic('topic4')"> 
-                Topic 11 & Simulations (W13D2 KC)
+                Topic 11 & Simulations
             </button> 
         </div>
         <div id="unit4" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')"> 
-                Topic 9 (W15D2 KC)
+                Topic 9
             </button>
             <button class="topic" onClick = "openTopic('topic2')">
-                Topic 12 (W15D3 KC)
+                Topic 12
             </button>
             <button class="topic" onClick = "openTopic('topic3')">
-                Topic 14 (W16D2 KC)
+                Topic 14
             </button>
             <button class="topic" onClick = "openTopic('topic4')"> 
-                Topic 15 (W16D3 KC)
+                Topic 15
             </button> 
         </div>
         <div id="unit5" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')"> 
-                Topic 19 (W17D3 KC)
+                Topic 19
             </button>
             <button class="topic" onClick = "openTopic('topic2')">
-                Topic 20 (W18D2 KC)
+                Topic 20
             </button>
             <button class="topic" onClick = "openTopic('topic3')">
-                Topic 22 (W19D1 KC)
+                Topic 22
             </button>
             <button class="topic" onClick = "openTopic('topic4')"> 
-                Topic 23 (W19D2 KC)
+                Topic 23
             </button>
         </div>
         <style>
@@ -152,19 +152,23 @@
             }
 
             body{
+                align-items: center;
                 font-family: "times new roman";
             }
             .topic{
-                width: 1455px;
+                align-items: center;
+                width: 1437px;
                 height: 70px;
-                font-family: 'Trebuchet MS';
-                margin-top: 10px;
+                font-family: inherit;
+                margin-top: 20px;
                 margin-left: 10px;
                 margin-right: 10px;
                 border: none;
+                font-weight: bold;
+                font-size: 45px;
             }
             .tab{
-                width: 227px;
+                width: 228px;
                 height: 50px;
                 background-color: #a2bce8;
                 border: none;
@@ -185,7 +189,8 @@
                 height: 50px;
             }
             .tabsContainer{
-                vertical-align: bottom;
+                align-items: center;
+                vertical-align: center;
             }
             .formatted-paragraph-blue{
                 margin: 20px;
@@ -203,6 +208,16 @@
                 border-left: #359535;
                 border-width: 4px;
                 border-left-style: solid;
+                padding: 20px;
+            }
+
+            .formatted-paragraph-rounded{
+                margin: 20px;
+                background-color: #f5f4f9;
+                border-color: #653595;
+                border-width: 2px;
+                border-style: solid;
+                border-radius: 20px;
                 padding: 20px;
             }
         </style>
