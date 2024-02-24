@@ -5,105 +5,82 @@
     </head>
     <body>
         <div class="tabsContainer">
-            <button class="tab" onClick = "openUnit('unit1')">
-                Unit 1
-            </button>
-            <button class="tab" onClick = "openUnit('unit2')">
-                Unit 2
-            </button>
-            <button class="tab" onClick = "openUnit('unit3')">
-                Unit 3
-            </button>
-            <button class="tab" onClick = "openUnit('unit4')">
-                Unit 4
-            </button>
-            <button class="tab" onClick = "openUnit('unit5')">
-                Unit 5
-            </button>
-            <button class="tab" onClick = "openUnit('cummulative')">
-                Cummulative
-            </button>
+            <ul>
+                <li data-tab-target="#unit1" class = 'tab'> unit 1</li>
+                <li data-tab-target="#unit2" class = 'tab'> unit 2</li>
+                <li data-tab-target="#unit3" class = 'tab'> unit 3</li>
+            </ul>
         </div>
         <div class="start_here">
             <h1 class = "start-here">Start here!</h1>
         </div>
         <div class="diagnostic">diagnostic</div>
-        <script src="app.js"></script>
-        <div id="unit1" class="tabView">
+        <div id="unit1" data-tab-content>
+            <button class="topic">
+                Topic 1
+            </button>
             <button class="topic" onClick = "openTopic('topic1')">
                 Topic 1
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Topic 2
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Topic 3
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')">
-                Topic 4
-            </button>
-            <button class="topic" onClick = "openTopic('topic5')">
-                Topic 5
-            </button>
-            <button class="topic" onClick = "openTopic('topic6')">
-                Topic 6
-            </button>
-        <div id="unit2" class="tabView">
-            <button class="topic" onClick = "openTopic('topic1')">
-                Topic 1
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Topic 2
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Topic 3
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')">
-                Topic 4
-            </button>
-        <div id="unit3" class="tabView">
-            <button class="topic" onClick = "openTopic('topic1')">
-                Topic 1
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Topic 2
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Topic 3
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Topic 4
-            </button> 
-            <button class="topic" onClick = "openTopic('topic5')"> 
-                Topic 5
-            </button>  
-        </div>
-        <div id="unit4" class="tabView">
-            <button class="topic" onClick = "openTopic('topic1')"> 
-                Topic 1
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Topic 2
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Topic 3
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Topic 4
-            </button> 
-        <div id="unit5" class="tabView">
-            <button class="topic" onClick = "openTopic('topic1')"> 
-                Topic 1
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Topic 2
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Topic 3
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Topic 4
             </button>
         </div>
+        <div id="unit2" data-tab-content>
+            <button class="topic" onClick = "openTopic('topic1')">
+                Topic 1
+            </button>
+            <button class="topic" onClick = "openTopic('topic1')">
+                Topic 1
+            </button>
+        </div>
+        <div id="unit3" data-tab-content>
+            <button class="topic" onClick = "openTopic('topic1')">
+                Topic 1
+            </button>
+            <button class="topic" onClick = "openTopic('topic2')">
+                Topic 2
+            </button>
+        </div>
+        <style>
+            [data-tab-content]{
+                display: none;
+            }
+            .active[data-tab-content]{
+                display:block;
+            }
+
+            .tab{
+                display: inline-block;
+                justify-content: space-around;
+                list-style-type: none;
+                margin: 0px;
+                margin: 0px;
+                width: 400px;
+                height: 50px;
+                padding: 0px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .tabsContainer{
+                border-bottom:4px solid teal;
+            }
+            
+            .tab:hover{
+                background-color: blue;
+            }
+        </style>
+        <script>
+            const tabs = document.querySelectorAll('[data-tab-target]');
+            const tabContents = document.querySelectorAll('[data-tab-content]');
+
+            tabs.forEach(tab=>{
+                tab.addEventListener('click', () =>{
+                    const target = document.querySelector(tab.dataset.tabTarget)
+                    tabContents.forEach(tabContent=>{
+                        tabContent.classList.remove('active');
+                    })
+                    target.classList.add('active');
+                });
+            })
+
+        </script>
     </body>
     </html>
