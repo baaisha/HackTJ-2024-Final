@@ -5,8 +5,8 @@
     </head>
     <body>
         <div class="tabsContainer">
-            <button class="tab-logo" onclick = "openUnit('unit1')">
-                <img src="logoBetter.png" alt="logo" class = "logo">
+            <button class="tab-logo" onclick = "openUnit('home')">
+                Home
             </button>
             <button class="tab" onclick = "openUnit('unit1')">
                 Unit 1
@@ -27,10 +27,13 @@
                 Cummulative
             </button>
         </div>
-        <div class="start_here">
-            <h1 class = "start-here">Start here!</h1>
+        <div id="home" class="unitView">
+            <div class="start_here">
+                <h1 class = "start-here">Start here!</h1>
+            </div>
+            <div class="diagnostic">diagnostic</div>
         </div>
-        <div class="diagnostic">diagnostic</div>
+        
         <div id="unit1" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
                 Topic 1
@@ -159,48 +162,62 @@
 function openUnit(name){
     const tabs = document.querySelector('.tab');
 const tabViews = document.querySelectorAll('.unitView');
-    if(name == 'unit1'){
+    if(name == 'home'){
         tabViews[0].removeAttribute("hidden")
         tabViews[1].setAttribute("hidden", "true");
         tabViews[2].setAttribute("hidden", "true");
         tabViews[3].setAttribute("hidden", "true");
         tabViews[4].setAttribute("hidden", "true");
         tabViews[5].setAttribute("hidden", "true");
-    } else if (name == 'unit2'){
+        tabViews[6].setAttribute("hidden", "true");
+    }else if(name == 'unit1'){
         tabViews[1].removeAttribute("hidden")
         tabViews[0].setAttribute("hidden", "true");
         tabViews[2].setAttribute("hidden", "true");
         tabViews[3].setAttribute("hidden", "true");
         tabViews[4].setAttribute("hidden", "true");
         tabViews[5].setAttribute("hidden", "true");
-    } else if (name == 'unit3'){
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'unit2'){
         tabViews[2].removeAttribute("hidden")
-        tabViews[1].setAttribute("hidden", "true");
         tabViews[0].setAttribute("hidden", "true");
+        tabViews[1].setAttribute("hidden", "true");
         tabViews[3].setAttribute("hidden", "true");
         tabViews[4].setAttribute("hidden", "true");
         tabViews[5].setAttribute("hidden", "true");
-    } else if (name == 'unit4'){
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'unit3'){
         tabViews[3].removeAttribute("hidden")
         tabViews[1].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
         tabViews[0].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
         tabViews[4].setAttribute("hidden", "true");
         tabViews[5].setAttribute("hidden", "true");
-    } else if (name == 'unit5'){
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'unit4'){
         tabViews[4].removeAttribute("hidden")
         tabViews[1].setAttribute("hidden", "true");
         tabViews[2].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
         tabViews[0].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
         tabViews[5].setAttribute("hidden", "true");
-    } else if (name == 'cummulative'){
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'unit5'){
         tabViews[5].removeAttribute("hidden")
         tabViews[1].setAttribute("hidden", "true");
         tabViews[2].setAttribute("hidden", "true");
         tabViews[3].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'cummulative'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
         tabViews[4].setAttribute("hidden", "true");
         tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
     }
 }
         </script>
