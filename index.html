@@ -5,6 +5,8 @@
     </head>
     <body>
         <div class="tabsContainer">
+                <area shape="circle" coords="50,50,50">
+            </map>
             <button class="tab-logo" onclick = "openUnit('unit1')">
                 <img src="logoBetter.png" alt="logo" class = "logo">
             </button>
@@ -24,13 +26,13 @@
                 Unit 5
             </button>
             <button class="tab" onclick = "openUnit('cummulative')">
-                Cummulative
+                Cumulative
             </button>
         </div>
         <div class="start_here">
-            <h1 class = "start-here">Start here!</h1>
+            <h1 style=font-size:60px class="start-here">Start here!</h1>
         </div>
-        <div class="diagnostic">diagnostic</div>
+        <div style=font-size:30px; class="diagnostic">Diagnostic:</div>
         <div id="unit1" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
                 Topic 1
@@ -121,10 +123,13 @@
                 color: white;
             }
             .topic{
+                width: 1455px;
                 display:flexbox;
                 width: 700px;
                 height: 70px;
                 font-family: 'Trebuchet MS';
+                font-size: xx-large;
+                margin-bottom: 20px;
                 
             }
             .tab{
