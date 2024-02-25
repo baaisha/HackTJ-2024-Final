@@ -33,7 +33,7 @@
         <div id="home" class="unitView">
             <div class="start_here">
                 <h1 style="font-size:100px; text-align: center; " class="start-here">Start here!</h1>
-                <h2 style="font-size:30px; text-align: center; ">Stat Master is an online platform for mastering statistics online. Whether you’re a novice seeking to understand the fundamentals, or just aiming to enhance your analytical skills, our webpage offers the resources you need to meet your learning needs. </p2>
+                <h2 style="font-size:24px; text-align: center; margin: 10px;">Stat Master is an online platform for mastering statistics online. Whether you’re a novice seeking to understand the fundamentals, or just aiming to enhance your analytical skills, our webpage offers the resources you need to meet your learning needs. </p2>
                 </p2>
             </div>
 
@@ -51,31 +51,9 @@
         
         <div id="unit1" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
-                Basic statistics terms, Dotpots and Bar Graphs
-                Topic 1, 2
+                Basic statistics terms, Dotplots and Bar Graphs
             </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Describing Distribution, Quantitative Graphs
-                Topic 7, 8, 10
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Measures of spread
-                Topic 9
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')">
-                SOCS Paragraphs
-                SOCS
-            </button>
-            <button class="topic" onClick = "openTopic('topic5')">
-                Scatterplots and Regression
-                Topic 26, 27
-            </button>
-            <button class="topic" onClick = "openTopic('topic6')">
-                Regression line
-                Topic 28
-            </button> 
-            <h1>Topic 1</h1>
-            <div class="formatted-paragraph-blue">
+            <div class="formatted-paragraph-blue" class = "topicInfo" >
                 <p1>
                     <strong>What is statistics?</strong> Statistics is the science of learning from data. Data is always collected in context.
                     <br>
@@ -114,7 +92,10 @@
                     </ul>
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic2')">
+                Describing Distribution, Quantitative Graphs
+            </button>
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Important Aspects of Data Description:</strong>
                     <ul>
@@ -182,7 +163,10 @@
                     </ul>
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic3')">
+                Measures of spread
+            </button>
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>Standard Deviation:</strong>
                     <ul>
@@ -216,7 +200,10 @@
                     </ul>
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic4')">
+                SOCS Paragraphs
+            </button>
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Guidelines for Graph Selection and Analysis:</strong>
                     <ul>
@@ -248,7 +235,10 @@
                     In 1846, a published paper provided chest measurements (in inches) of 5738 Scottish militiamen. This table displays the data in summary form using a frequency list. A count of 3 means there are 3 Scottish militiamen with the corresponding chest size, 33 inches for example. The second row means there are 18 Scottish militiamen with a chest size of 34 inches. Make a histogram of the data. If the technology you are using doesn’t allow you to use a frequency list, here is the complete distribution: Scottish (you can copy all the values by clicking at the top of the column, then right-clicking and choosing copy). Be sure to label the histogram. Then, describe the distribution using SOCS.
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic5')">
+                Scatterplots and Regression
+            </button>
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>Looking at Two Quantitative Variables:</strong>
                     <ul>
@@ -292,7 +282,10 @@
                     </ul>
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic6')">
+                Regression line
+            </button> 
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Linear Regression:</strong>
                     <ul>
@@ -337,23 +330,10 @@
             </div>
         </div>
         <div id="unit2" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')">
+            <button class="topic" onClick = "openTopic('topic7')">
                 Hypoth, Bias, Exp vs. Observ Study, Describing Data
-                Topic 3
             </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Sampling methods
-                Topic 4
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Experimental Process
-                Topic 5
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')">
-                Blocking
-                Blocking
-            </button>
-            <div class="formatted-paragraph-green">
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Hypothesis:</strong> (If-then prediction) If [observational unit] is changed by [explanatory variable statement] then I expect that [response variable statement].
                     <br>
@@ -414,7 +394,10 @@
                     </ul>
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic8')">
+                Sampling methods
+            </button>
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>Sampling Bias:</strong> When a sample of a population is collected in a way all members of the population do not have an equal sampling probability (chance of being sampled).
                     <br>
@@ -446,7 +429,10 @@
                     </ul>
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic9')">
+                Experimental Process
+            </button>
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Anecdotal Evidence:</strong> Results of situations that come to mind easily, but have little to no use in scientific research. Statistics tries to avoid anecdotal evidence.
                     <br>
@@ -475,7 +461,11 @@
                     Random assignment aims to produce treatment groups that are similar in all respects except for the treatments imposed. Random assignment eliminates confounding.
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic10')">
+                Blocking
+            </button>
+            
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>3 Easy Steps to Fix Your Confounding Variables!!!</strong>
                     <br>
@@ -506,23 +496,10 @@
             </div>
         </div>
         <div id="unit3" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')">
+            <button class="topic" onClick = "openTopic('topic11')">
                 Intro Vocab/Diagrams
-                Intro Vocab/Diagrams
             </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                ME/Dep/Ind
-                ME/Dep/Ind
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Counting and Theoretical
-                Counting and Theoretical
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Probability & Simulations
-                Topic 11 & Simulations
-            </button> 
-            <div class="formatted-paragraph-blue">
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>Probability:</strong> Measures how likely it is for an event to occur.
                     <br>
@@ -549,7 +526,10 @@
                     <strong>Blocking:</strong> Helps eliminate confounding variables.
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic12')">
+                ME/Dep/Ind
+            </button>
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>P(E2|E1):</strong>
                     <br>
@@ -574,7 +554,10 @@
                     For any two events A and B with P(A) > 0, P(B|A) = P(AB) / P(A)
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic13')">
+                Counting and Theoretical
+            </button>
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>1. Mutually Exclusive</strong>
                     <br>
@@ -618,8 +601,14 @@
                     <br>
                     (c) Warning: The probabilities for day 2 are different in both parts.
                 </p1>
-            </div>            
-            <div class="formatted-paragraph-green">
+            </div>   
+            <button class="topic" onClick = "openTopic('topic14')"> 
+                Probability & Simulations
+            </button> 
+            
+            
+                     
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Fundamental counting principle</strong>
                     <br>
@@ -688,7 +677,7 @@
                     Explanation: There are multiple instances where you can choose at least 3 girls out of 5 because this accounts for the times you choose 3 girls, 4, or 5 for the 5 seats. These events are separate from each other, so you add their individual probabilities that you find by multiplying the chances of choosing a girl that many times by choosing the remaining seats from the boys that are remaining
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>Probability</strong>
                     <br>
@@ -739,7 +728,7 @@
                     Ha:p>p0
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Probability</strong>
                     <br>
@@ -793,19 +782,10 @@
         </div>
 
         <div id="unit4" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')"> 
+            <button class="topic" onClick = "openTopic('topic15')"> 
                 Definitions for Normal Distribution Curve
-                Topic 9
             </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Using Ti-84 for Distributions
-                Topic 12
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Significance, Sources of Variation
-                Topic 15
-            </button> 
-            <div class="formatted-paragraph-green">
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     <strong>Learn the alphabet with RS1 (Part 1):</strong>
                     <br>
@@ -842,7 +822,10 @@
                     <strong>w</strong> is for wow you made it to the end of this: stay tuned for the other half of the alphabet next time (help i left myself all the bad letters)
                 </p1>
             </div>
-            <div class="formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic16')">
+                Using Ti-84 for Distributions
+            </button>
+            <div class="formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     <strong>Distinguishing characteristics of a normal distribution:</strong>
                     <br>
@@ -901,7 +884,10 @@
                     If a z-score is too extreme to appear in the table, use a shaded sketch to determine whether the relevant probability is less than 0.0002 or greater than 0.9998
                 </p1>
             </div>
-            <div class="formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic17')"> 
+                Significance, Sources of Variation
+            </button> 
+            <div class="formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     Possible sources of variation in a sampling distribution mean versus a population mean include<br>
                     Bias: if the sampling method was biased (eg not simple random sample)<br>
@@ -919,23 +905,10 @@
         </div>
 
         <div id="unit5" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')"> 
+            <button class="topic" onClick = "openTopic('topic18')"> 
                 T & Z-Confidence Level/Interval
-                Topic 19
             </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Steps of Significance Tests
-                Topic 20
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Steps of Two Sample Significance Tests
-                Topic 22
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Matched Pairs Significance Tests
-                Topic 23
-            </button>
-            <div class = "formatted-paragraph-green">
+            <div class = "formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     A confidence interval communicates how accurate a point estimate is likely to be, based on standard deviation<br>
                     A confidence interval starts with the point estimate and then adds or subtracts a margin of error<br>
@@ -961,7 +934,10 @@
                     Either the sample size is large (n30) or the population is normally distributed<br>
                 </p1>
             </div>
-            <div class = "formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic19')">
+                Steps of Significance Tests
+            </button>
+            <div class = "formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     Test of Significance<br>
                     Give a description of the parameter, being sure to identify the type of number (e.g.., a mean or a proportion), the variable, and the population<br>
@@ -1003,7 +979,10 @@
                     You cannot generalize to a larger population if the sample was not random, in which case you can generalize to smaller, more representative populations<br>
                 </p1>
             </div>
-            <div class = "formatted-paragraph-green">
+            <button class="topic" onClick = "openTopic('topic20')">
+                Steps of Two Sample Significance Tests
+            </button>
+            <div class = "formatted-paragraph-green" class = "topicInfo">
                 <p1>
                     tl; dr: it’s basically the same as before, just with two variables<br>
                     tl; dr: it’s basically the same as before, just with two variables<br>
@@ -1036,7 +1015,11 @@
                     sure to get the t* value corresponding to the lesser degrees of freedom<br>
                 </p1>
             </div>
-            <div class = "formatted-paragraph-blue">
+            <button class="topic" onClick = "openTopic('topic21')"> 
+                Matched Pairs Significance Tests
+            </button>
+
+            <div class = "formatted-paragraph-blue" class = "topicInfo">
                 <p1>
                     🥳 Wooo last topic of RS1!<br>
                     If the sampling or experimental design is paired, then use paired t-procedures. If the samples are drawn independently for the two groups, or if randomization is used to assign subjects to separate treatment groups, use two-sample t-procedures.<br>

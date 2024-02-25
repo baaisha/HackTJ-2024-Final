@@ -155,3 +155,177 @@ const tabViews = document.querySelectorAll('.unitView');
         tabViews[5].setAttribute("hidden", "true");
     }
 }
+
+displayQuestion();
+
+function openTopic(name){
+    const tabViews = document.querySelectorAll('.topicInfo');
+    if(name == 'topic1'){
+        tabViews[0].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+
+    }else if(name == 'topic2'){
+        tabViews[1].removeAttribute("hidden")
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic3'){
+        tabViews[2].removeAttribute("hidden")
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'topic4'){
+        tabViews[3].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'topic5'){
+        tabViews[4].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'topic6'){
+        tabViews[5].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[6].setAttribute("hidden", "true");
+    } else if (name == 'topic7'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic8'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic9'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic10'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic11'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic12'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic13'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    }else if (name == 'topic14'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic15'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic16'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic17'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic18'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic19'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic20'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    } else if (name == 'topic21'){
+        tabViews[6].removeAttribute("hidden")
+        tabViews[1].setAttribute("hidden", "true");
+        tabViews[2].setAttribute("hidden", "true");
+        tabViews[3].setAttribute("hidden", "true");
+        tabViews[4].setAttribute("hidden", "true");
+        tabViews[0].setAttribute("hidden", "true");
+        tabViews[5].setAttribute("hidden", "true");
+    }
+}
