@@ -1,7 +1,7 @@
 const questions = [
-    { question: "What is the capital of France?", answer: "Paris" },
-    { question: "Which planet is known as the Red Planet?", answer: "Mars" },
-    { question: "What is the largest mammal on Earth?", answer: "Blue Whale" }
+    { question: "True or False: Consistency refers to the spread in a distribution.", answer: "True" },
+    { question: "True or False: Tendency refers to the center of a distribution.", answer: "True" },
+    { question: "True or False: When describing a distribution, it is not necessary to relate your comments to the context of the data.", answer: "False" }
 ];
 
 function nextQuestion() {
