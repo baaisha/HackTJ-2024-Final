@@ -3,6 +3,9 @@ body{
     align-items: center;
     font-family: "Trebuchet MS";
 }
+ul{
+    list-style: none;
+}
 .topic{
     align-items: center;
     width: 1455px;
@@ -23,6 +26,7 @@ body{
     background-color: inherit;
     border: none;
     border-radius: 4px;
+    color: #2f4a76;
 }
 .tab-logo{
     border: none;
