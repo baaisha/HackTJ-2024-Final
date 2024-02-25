@@ -1,3 +1,83 @@
+
+body{
+    align-items: center;
+    font-family: "Trebuchet MS";
+}
+.topic{
+    align-items: center;
+    width: 1455px;
+    height: 70px;
+    font-family: inherit;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 45px;
+    background-color: #b9d8f7;
+    border-radius: 10px;
+}
+.tab{
+    width: 227.4px;
+    height: 50px;
+    background-color: #cdd7fc;
+    border: none;
+    border-radius: 4px;
+}
+.tab-logo{
+    border: none;
+    border-radius: 4px;
+    background-color: #a2bce8;
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.logo{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+#tabsContainer{
+    align-items: center;
+    vertical-align: center;
+}
+.formatted-paragraph-blue{
+    margin: 20px;
+    background-color: aliceblue;
+    border-left: blue;
+    border-width: 4px;
+    border-left-style: solid;
+    padding: 20px;
+
+}
+
+.formatted-paragraph-green{
+    margin: 20px;
+    background-color:#f4f9f4;
+    border-left: #359535;
+    border-width: 4px;
+    border-left-style: solid;
+    padding: 20px;
+}
+
+.formatted-paragraph-rounded{
+    margin: 20px;
+    background-color: #f5f4f9;
+    border-color: #653595;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.fixed-section {
+    overflow: hidden;
+    background-color:#cdd7fc;
+    position: fixed;
+    top: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F0F2F5; /* Soft Gray */
@@ -50,7 +130,7 @@ h1 {
 }
 
 input[type="text"] {
-    width: calc(100% - 20px);
+    width: calc(100% - 60px);
     padding: 12px;
     margin-top: 15px;
     border-radius: 5px;
@@ -82,4 +162,25 @@ button {
 .wrong {
     color: #E74C3C; /* Soft Red */
     background-color: #FADBD8; /* Light Red Background */
+}
+
+.next-btn {
+    padding: 10px 20px;
+    background-color: #3498DB; /* Blue background color */
+    color: #FFFFFF; /* White text color */
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background-color: #2980B9; /* Darker blue on hover */
+}
+
+@media only screen and (max-width: 600px) {
+    .next-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
