@@ -20,7 +20,7 @@ body{
 .tab{
     width: 227.4px;
     height: 50px;
-    background-color: #cdd7fc;
+    background-color: inherit;
     border: none;
     border-radius: 4px;
 }
@@ -73,7 +73,7 @@ body{
 
 .fixed-section {
     overflow: hidden;
-    background-color:#cdd7fc;
+    background:linear-gradient(#cdd7fc, #F0F2F5);
     position: fixed;
     top: 0;
 }
