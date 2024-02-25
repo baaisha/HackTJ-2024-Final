@@ -1,6 +1,85 @@
-button{
-    border: 4px blue;
-    width: 100px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0F2F5; /* Soft Gray */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B1C7E2; /* Soft Blue */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 80px auto 20px; /* Adjust margin for content below navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+nav ul li {
+    margin-right: 0; /* Remove individual margin */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    color: #333; /* Dark Gray */
+}
+
+#question-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F4B3C2; /* Soft Pink */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px solid #B1C7E2; /* Soft Blue */
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 15px; /* Add spacing between button and input */
+    background-color: #B1C7E2; /* Soft Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.correct {
+    color: #2ECC71; /* Soft Green */
+    background-color: #DFF0D8; /* Light Green Background */
+}
+
+.wrong {
+    color: #E74C3C; /* Soft Red */
+    background-color: #FADBD8; /* Light Red Background */
 }

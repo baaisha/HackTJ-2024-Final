@@ -1,312 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title class = "main-title">StatMaster</title>
-    </head>
-    <body>
-        <div class="tabsContainer">
-            <button style=width:60px; class="tab" onclick = "openUnit('home')">
-                Home
-            </button>
-            <button class="tab" onclick = "openUnit('unit1')">
-                Unit 1: Descriptive Statistics
-            </button>
-            <button class="tab" onclick = "openUnit('unit2')">
-                Unit 2: Collecting Data
-            </button>
-            <button class="tab" onclick = "openUnit('unit3')">
-                Unit 3: Probability
-            </button>
-            <button class="tab" onclick = "openUnit('unit4')">
-                Unit 4: Randomness in Data
-            </button>
-            <button class="tab" onclick = "openUnit('unit5')">
-                Unit 5: Inferential Statistics
-            </button>
-            <button class="tab" onclick = "openUnit('cummulative')">
-                Cumulative Review
-            </button>
-        </div>
-        <div id="home" class="unitView">
-            <div class="start_here">
-                <h1 style=font-size:60px class="start-here">Start here!</h1>
-            </div>
-            <div style=font-size:30px; class="diagnostic">Diagnostic:</div>
-        </div>
-        
-        <div id="unit1" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')">
-                Basic statistics terms, Dotpots and Bar Graphs
-                Topic 1, 2
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Describing Distribution, Quantitative Graphs
-                Topic 7, 8, 10
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Measures of spread
-                Topic 9
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')">
-                SOCS Paragraphs
-                SOCS
-            </button>
-            <button class="topic" onClick = "openTopic('topic5')">
-                Scatterplots and Regression
-                Topic 26, 27
-            </button>
-            <button class="topic" onClick = "openTopic('topic6')">
-                Regression line
-                Topic 28
-            </button>
-            <h1>Topic 1</h1>
-            <div class = "formatted-paragraph-blue">
-            <p1>* Statistics is the science of learning from data. Data is always collected in context
-                * Data comes from real world contexts
-                * A variable is a characteristic of something that can be assigned a number or category
-                * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from
-                * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability
-                * Quantitative variable measures a numerical characteristic
-                * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories
-                * A research question often looks for patterns in different variables and looks for relationships between variables
-                </p1>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Question Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class = "formatted-paragraph-green">
-                <p1>* Statistics is the science of learning from data. Data is always collected in context
-                    * Data comes from real world contexts
-                    * A variable is a characteristic of something that can be assigned a number or category
-                    * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from
-                    * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability
-                    * Quantitative variable measures a numerical characteristic
-                    * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories
-                    * A research question often looks for patterns in different variables and looks for relationships between variables
-                    </p1>
-                </div>
-            <div class = "formatted-paragraph-rounded">
-                    <p1>* Statistics is the science of learning from data. Data is always collected in context
-                        * Data comes from real world contexts
-                        * A variable is a characteristic of something that can be assigned a number or category
-                        * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from
-                        * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability
-                        * Quantitative variable measures a numerical characteristic
-                        * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories
-                        * A research question often looks for patterns in different variables and looks for relationships between variables
-                        </p1>
-                    </div>
-        </div>
-        <div id="unit2" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')">
-                Hypoth, Bias, Exp vs. Observ Study, Describing Data
-                Topic 3
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Sampling methods
-                Topic 4
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Experimental Process
-                Topic 5
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')">
-                Blocking
-                Blocking
-            </button>
-        </div>
-        <div id="unit3" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')">
-                Intro Vocab/Diagrams
-                Intro Vocab/Diagrams
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                ME/Dep/Ind
-                ME/Dep/Ind
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Counting and Theoretical
-                Counting and Theoretical
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Probability & Simulations
-                Topic 11 & Simulations
-            </button> 
-        </div>
-        <div id="unit4" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')"> 
-                Definitions for Normal Distribution Curve
-                Topic 9
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Using Ti-84 for Distributions
-                Topic 12
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                CLT, Sample versus Population
-                Topic 14
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Significance, Sources of Variation
-                Topic 15
-            </button> 
-        </div>
-        <div id="unit5" class="unitView" hidden>
-            <button class="topic" onClick = "openTopic('topic1')"> 
-                T & Z-Confidence Level/Interval
-                Topic 19
-            </button>
-            <button class="topic" onClick = "openTopic('topic2')">
-                Steps of Significance Tests
-                Topic 20
-            </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                Steps of Two Sample Significance Tests
-                Topic 22
-            </button>
-            <button class="topic" onClick = "openTopic('topic4')"> 
-                Matched Pairs Significance Tests
-                Topic 23
-            </button>
-        </div>
-        <style>
-            head{
-                
-                
-            }
+    <div class="container">
+        <h1>Random Question Quiz</h1>
+        <div id="question-container"></div>
+        <input type="text" id="answer-input" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Check Answer</button>
 
-            body{
-                align-items: center;
-                font-family: "times new roman";
-            }
-            .topic{
-                align-items: center;
-                width: 1437px;
-                height: 70px;
-                font-family: inherit;
-                margin-top: 20px;
-                margin-left: 10px;
-                margin-right: 10px;
-                border: none;
-                font-weight: bold;
-                font-size: 45px;
-            }
-            .tab{
-                width: 228px;
-                height: 50px;
-                background-color: #a2bce8;
-                border: none;
-                border-radius: 4px;
-            }
-            .tab-logo{
-                border: none;
-                border-radius: 4px;
-                background-color: #a2bce8;
-                width: 50px;
-                height: 50px;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-            .logo{
-                text-align: center;
-                width: 50px;
-                height: 50px;
-            }
-            .tabsContainer{
-                align-items: center;
-                vertical-align: center;
-            }
-            .formatted-paragraph-blue{
-                margin: 20px;
-                background-color: aliceblue;
-                border-left: blue;
-                border-width: 4px;
-                border-left-style: solid;
-                padding: 20px;
+        <!-- Result Display -->
+        <div id="result"></div>
+    </div>
 
-            }
-
-            .formatted-paragraph-green{
-                margin: 20px;
-                background-color:#f4f9f4;
-                border-left: #359535;
-                border-width: 4px;
-                border-left-style: solid;
-                padding: 20px;
-            }
-
-            .formatted-paragraph-rounded{
-                margin: 20px;
-                background-color: #f5f4f9;
-                border-color: #653595;
-                border-width: 2px;
-                border-style: solid;
-                border-radius: 20px;
-                padding: 20px;
-            }
-        </style>
-        <script>
-            
-
-            function openUnit(name){
-    const tabs = document.querySelector('.tab');
-const tabViews = document.querySelectorAll('.unitView');
-    if(name == 'home'){
-        tabViews[0].removeAttribute("hidden")
-        tabViews[1].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
-        tabViews[4].setAttribute("hidden", "true");
-        tabViews[5].setAttribute("hidden", "true");
-        tabViews[6].setAttribute("hidden", "true");
-    }else if(name == 'unit1'){
-        tabViews[1].removeAttribute("hidden")
-        tabViews[0].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
-        tabViews[4].setAttribute("hidden", "true");
-        tabViews[5].setAttribute("hidden", "true");
-        tabViews[6].setAttribute("hidden", "true");
-    } else if (name == 'unit2'){
-        tabViews[2].removeAttribute("hidden")
-        tabViews[0].setAttribute("hidden", "true");
-        tabViews[1].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
-        tabViews[4].setAttribute("hidden", "true");
-        tabViews[5].setAttribute("hidden", "true");
-        tabViews[6].setAttribute("hidden", "true");
-    } else if (name == 'unit3'){
-        tabViews[3].removeAttribute("hidden")
-        tabViews[1].setAttribute("hidden", "true");
-        tabViews[0].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
-        tabViews[4].setAttribute("hidden", "true");
-        tabViews[5].setAttribute("hidden", "true");
-        tabViews[6].setAttribute("hidden", "true");
-    } else if (name == 'unit4'){
-        tabViews[4].removeAttribute("hidden")
-        tabViews[1].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
-        tabViews[0].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
-        tabViews[5].setAttribute("hidden", "true");
-        tabViews[6].setAttribute("hidden", "true");
-    } else if (name == 'unit5'){
-        tabViews[5].removeAttribute("hidden")
-        tabViews[1].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
-        tabViews[0].setAttribute("hidden", "true");
-        tabViews[4].setAttribute("hidden", "true");
-        tabViews[6].setAttribute("hidden", "true");
-    } else if (name == 'cummulative'){
-        tabViews[6].removeAttribute("hidden")
-        tabViews[1].setAttribute("hidden", "true");
-        tabViews[2].setAttribute("hidden", "true");
-        tabViews[3].setAttribute("hidden", "true");
-        tabViews[4].setAttribute("hidden", "true");
-        tabViews[0].setAttribute("hidden", "true");
-        tabViews[5].setAttribute("hidden", "true");
-    }
-}
-        </script>
-    </body>
-    </html>    
+    <script src="script.js"></script>
+</body>
+</html>
