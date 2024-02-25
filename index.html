@@ -4,34 +4,34 @@
         <title class = "main-title">StatMaster</title>
     </head>
     <body>
-        <div class="tabsContainer">
-            <button style=width:60px; class="tab" onclick = "openUnit('home')">
+        <div class = "fixed-section" id="tabsContainer">
+            <button style=width:240px; class="tab" onclick = "openUnit('home')">
                 Home
             </button>
-            <button class="tab" onclick = "openUnit('unit1')">
+            <button style=width:240px; class="tab" onclick = "openUnit('unit1')">
                 Unit 1: Descriptive Statistics
             </button>
-            <button class="tab" onclick = "openUnit('unit2')">
+            <button style=width:240px; class="tab" onclick = "openUnit('unit2')">
                 Unit 2: Collecting Data
             </button>
-            <button class="tab" onclick = "openUnit('unit3')">
+            <button style=width:240px; class="tab" onclick = "openUnit('unit3')">
                 Unit 3: Probability
             </button>
-            <button class="tab" onclick = "openUnit('unit4')">
+            <button style=width:240px; class="tab" onclick = "openUnit('unit4')">
                 Unit 4: Randomness in Data
             </button>
-            <button class="tab" onclick = "openUnit('unit5')">
+            <button style=width:230px; class="tab" onclick = "openUnit('unit5')">
                 Unit 5: Inferential Statistics
             </button>
-            <button class="tab" onclick = "openUnit('cummulative')">
-                Cumulative Review
-            </button>
         </div>
+        <div style="height: 30px;";></div>
+        
         <div id="home" class="unitView">
             <div class="start_here">
-                <h1 style=font-size:60px class="start-here">Start here!</h1>
+                <h1 style="font-size:100px; text-align: center; " class="start-here">Start here!</h1>
+                <h2 style="font-size:30px; text-align: center; ">Stat Master is an online platform for mastering statistics online. Whether you’re a novice seeking to understand the fundamentals, or just aiming to enhance your analytical skills, our webpage offers the resources you need to meet your learning needs. </p2>
+                </p2>
             </div>
-            <div style=font-size:30px; class="diagnostic">Diagnostic:</div>
         </div>
         
         <div id="unit1" class="unitView" hidden>
@@ -61,39 +61,31 @@
             </button> 
             <h1>Topic 1</h1>
             <div class = "formatted-paragraph-blue">
-            <p1>* Statistics is the science of learning from data. Data is always collected in context
-                * Data comes from real world contexts
-                * A variable is a characteristic of something that can be assigned a number or category
-                * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from
-                * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability
-                * Quantitative variable measures a numerical characteristic
-                * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories
-                * A research question often looks for patterns in different variables and looks for relationships between variables
+            <p1>* Statistics is the science of learning from data. Data is always collected in context<br>
+                * Data comes from real world contexts<br>
+                * A variable is a characteristic of something that can be assigned a number or category<br>
+                * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from<br>
+                * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability<br>
+                * Quantitative variable measures a numerical characteristic<br>
+                * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories<br>
+                * A research question often looks for patterns in different variables and looks for relationships between variables<br>
+                Dotplot: graphs a quantitative variable. Each quantitative data value is shown as a dot above its location on a number line<br>
+                Draw a horizontal number line with the variable name<br>
+                Scale the axis by looking at the minimum and maximum values<br>
+                Mark a dot above the location of horizontal axis for each observational unit<br>
+                Bar graph: used to display data from a categorical variable or compare the size of different quantities (bars are not touching)<br>
+                Label both axes (categorical variable on the x-axis and quantitative data value on the y-axis)<br>
+                Draw bars that correspond to each variable and leave room in between each bar<br>
+                Dotplots and bar graphs are most illuminating when comparing the distribution of a variable between two or more groups<br>
+                When comparing tendency, do not use the word greater or less than, simply compare the values<br>
+                Tendency: refers to the center of the distribution and where the data points are likely to fall<br>
+                Consistency: refers to the spread/range of the distribution (synonymous with spread, variability) and how likely the data points are to fall within a certain range<br>
+                What does each dot in a dot plot represent?<br>
+                What type of variable is displayed in dot plots? What type of variable is displayed in bar graphs?<br>
+                When are dot plots and bar graphs most illuminating?<br>
+                What is consistency and tendency? How are they different?<br>
                 </p1>
             </div>
-
-            <div class = "formatted-paragraph-green">
-                <p1>* Statistics is the science of learning from data. Data is always collected in context
-                    * Data comes from real world contexts
-                    * A variable is a characteristic of something that can be assigned a number or category
-                    * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from
-                    * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability
-                    * Quantitative variable measures a numerical characteristic
-                    * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories
-                    * A research question often looks for patterns in different variables and looks for relationships between variables
-                    </p1>
-                </div>
-            <div class = "formatted-paragraph-rounded">
-                    <p1>* Statistics is the science of learning from data. Data is always collected in context
-                        * Data comes from real world contexts
-                        * A variable is a characteristic of something that can be assigned a number or category
-                        * The thing in which the category or number is assigned is called the observational unit. It is the objects or people that data is being collected from
-                        * Variability is different variables taking on different values from observational unit to observational unit (We are recording |variable| from |observational unit| to |observational unit|; statistics would not be a thing if there was no variability
-                        * Quantitative variable measures a numerical characteristic
-                        * Categorical variable records a group designation; binary variables are categorical variables with only two possible categories
-                        * A research question often looks for patterns in different variables and looks for relationships between variables
-                        </p1>
-                    </div>
         </div>
         <div id="unit2" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
@@ -112,6 +104,132 @@
                 Blocking
                 Blocking
             </button>
+            <div class = "formatted-paragraph-green">
+                <p1>hypothesis (if-then prediction): if [observational unit] is changed by [explanatory variable statement] then i expect that [response variable statement]<br>
+                    null hypothesis: no effect<br>
+                    alternative hypothesis: predicted effect (nonzero)<br>
+                    experiments vs observational studies:<br>
+                    experiments impose treatment (do things to find new data)<br>
+                    observational studies do not impose treatment (passively record existing data)<br>
+                    observational studies cannot be used to establish a cause and effect relationship, only experiments can (to see the response, we must impose the change)<br>
+                    observational studies can still be useful, as they establish a relationship between the two variables (but not necessarily a cause-effect one)<br>
+                    sampling vocab:<br>
+                    parameter is a measure of a whole population<br>
+                    statistic is a measure of a sample of a population<br>
+                    a sample is representative when it is able to represent the population<br>
+                    sample size is the number of observational units in a sample<br>
+                    sampling frame is a list of observational units in the population to select from<br>
+                    homogenous means that the population is overall uniform, and any sample is representative<br>
+                    simple random sampling (srs) is a method of sampling where every member in the population is given an equal chance, which generally creates a representative sample<br>
+                    types of bias:<br>
+                    convenience sampling: only choosing people convenient to get<br>
+                    voluntary response sampling: letting people choose to be part of the sample or not<br>
+                    undercoverage bias: the way you choose your sample underrepresents a part of the population<br>
+                    non-response bias: when people selected as part of the sample refuse<br>
+                    response bias: the way you survey or select the sample influences responses<br>
+                    wording bias: confusing wording leads to confusion<br>
+                    lurking variables:<br>
+                    def: a variable that could influence the response variable, yet is not the explanatory variable<br>
+                    confounding: when two variables are so interconnected that you cannot distinguish their effects<br>
+                    
+                    
+                    Example of parameter versus statistic: Of all U.S. kindergarten teachers, 32% say that knowing the alphabet is an essential skill. Of the 800 U.S. kindergarten teachers polled, 34% say that knowing the alphabet is an essential skill<br>
+                    Identify the population, sample, and sample size in each of the following settings<br>
+                    A quality control engineer at a factory that produces TVs selects 10 TV’s from the production line each hour for 8 hours<br>
+                    Population: refers to the entire broad thing being studied; All TVs at this factory<br>
+                    Sample: refers to the small part taken from the sample in the experiment or study; Randomly selected TVs from production line<br>
+                    Sample size: amount of things sampled; 80 TVs<br>
+                    Prior to an election, a local news organization surveys 1000 registered voters to predict which candidate will be elected as governor<br>
+                    Population: All registered voters in that state<br>
+                    Sample: 1000 voters that are surveyed<br>
+                    Sample size: 1000<br>
+                    Of the U.S. population, 36% have an allergy. A sample of 1200 randomly selected adults resulted in 33.2% reporting an allergy.<br>
+                    What is the population and its parameter value?<br>
+                    The population is U.S. citizens and the parameter is 36% having an allergy.<br>
+                    What is the sample and its statistics value?<br>
+                    The sample is the 1200 citizens selected and the statistic is 33.2% having an allergy<br>
+                    Why are parameters fixed and statistics variable?<br>
+                    Parameters describe the whole population and that population’s data stays stagnant. Statistics are variable because different samples will result in slightly different statistics due to sampling variability<br>
+                    allergy<br>
+                    One study of cell phones and the risk of brain cancer looked at a group of 469 people who have brain cancer. The investigators matched each cancer patient with a person of the same age, sex, and race who did not have brain cancer, then asked about the use of cell phones. Result: Our data suggests that the use of hand-held cellular phones are not associated with risk of brain cancer<br>
+                    Is this an observational study or an experiment?<br>
+                    It is an observational study as they are not imposing treatment on the subjects<br>
+                    What is the explanatory variable? Response variable?<br>
+                    The explanatory variable is cell phone use<br>
+                    The response variable is whether you get brain cancer<br>
+                    Based on this study, would you conclude that cell phones do not increase the risk of brain cancer? Why or why not?<br>
+                    You cannot conclude this as it was an observational study and you cannot draw cause and effect conclusions<br>
+                    Even though cause and effect relationships cannot be drawn from an observational study, how can it still help researchers?<br>
+                    It can help them find associations between two variables and create an experiment based on that result<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    Sampling bias: When a sample of a population is collected in a way all members of the population do not have an equal sampling probability (chance of being sampled)<br>
+                    Simple random sampling: A type of probability sampling in which a subset of a population is randomly selected for data collection. All members of the population must have an equal chance of being sampled<br>
+                    Random digit tables, calculators, and computers are good impersonal methods to select a random sample<br>
+                    Using a random digits table:<br>
+                    Decide the number of digits being looked for each time<br>
+                    When under 10 items in the population, look for single digits (0-9)<br>
+                    When under 100 items, look for 2 digits (00-99)<br>
+                    When under 1000 items, look for 3 digits (000-999)<br>
+                    Start at any point in the table and read the digits based on the number decided in step 1<br>
+                    E.g., if a population has 78 items, look for digits 01-78 (skip 00 and 79-99)<br>
+                    Depending on the situation, you might skip repeat selections<br>
+                    Show your work by circling/underlining digits being selected and crossing out digits being skipped<br>
+                    Sample size refers to how many observational units are in a sample<br>
+                    In an actual study, you should only take one sample from a given population<br>
+                    If your sampling method is biased, taking a larger sample will not reduce the bias, but produce a more precise estimate that is still inaccurate to the population value<br>
+                    If you are working with a truly random sample, it is reasonable to draw conclusions about a population from its sample<br>
+                    The larger a sample, the more precise its statistics are <br>
+                    Precision is how close the data points are to each other<br>
+                    Sample size affects the precision of a sample<br>
+                    Accuracy is how close the data points are to the accepted/predicted value<br>
+                    Bias (or the lack of bias) affects the accuracy of a sample<br>
+                    If you are not working with a random sample, what can you not do confidently?<br>
+                    You cannot say that the sample is representative of the population<br>
+                    If your sampling method is biased and you take a larger sample you will _____ reduce the bias and you will produce a more _____ estimate that is still not close to the population value.<br>
+                    Not<br>
+                    Precise<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    Anecdotal evidence: results of situations that come to mind easily, but have little to no use in scientific research. Statistics tries to avoid anecdotal evidence<br>
+                    Experiment: study that treatment is actively imposed by the experimenter on subjects. Ideally, subjects are all identical other than the explanatory variable<br>
+                    Random Assignment: preferred way of assigning subjects treatment to avoid confounding variables. Each subject has an equal chance of being assigned any treatment group. Study is called a randomized comparative experiment.<br>
+                    It is often helpful to diagram an experiment using an experimental design diagram.<br>
+                    Observational unit --> (arrows from observational to treatment indicate random assignment) --> Treatment 1 or Treatment 2 --> Compare results (mean or proportion)<br>
+                    Comparison: Use a design to compare two or more treatments<br>
+                    Random assignment: use chance to assign experimental units to treatments to create roughly equivalent groups of observational units by balancing the effects of other variables among treatment groups<br>
+                    Control: Keeps other variables (excluding explanatory) the same for all groups, especially variables that are likely to affect response variable<br>
+                    Replication: Uses enough experimental units in each group so that any difference in the effects of the treatments can be distinguished from chance difference between groups<br>
+                    Blindness: experimental units are not aware of the experiment being done and the group that they are assigned to avoid outside influences<br>
+                    Double blindness is when the experimenter also does not know the treatment assignments<br>
+                    Random sampling aims to produce a sample that is representative of the population. Random sampling eliminates bias.<br>
+                    Random assignment aims to produce treatment groups that are similar in all respects except for the treatments imposed. Random assignment eliminates confounding<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    3 easy steps to fix your confounding variables!!!<br>
+                    are you running a medical survey or similar? worried about dumb patients “feeling better” just because they got “helped”? try placebos! make everyone feel the same way by changing as little as possible between control groups<br>
+                    stupid patients and researchers letting judgment get in the way? BLIND THEM!!! don’t tell patients which control group their part of of (single blind) and now that i think about it don’t tell researchers either (double blind)<br>
+                    really paranoid about a specific confounding variable??? BLOCK THEM!!! separate your observational units into homogenous blocks by lurking variables first, then randomize groups and compare within each block - no more confounding guaranteed!<br>
+                    um yeah infomercial done<br>
+                    a design without blocking is a “completely randomized design”<br>
+                    a design with blocking is a “randomized block design”<br>
+                    one sample, two sample, matched pairs<br>
+                    one sample: collect one piece of data (one sample wow) from each observational unit<br>
+                    then see if the sample statistics show anything meaningfully significant (1 sample test)<br>
+                    two sample: split your observational units into groups then take a piece of data from each group, but calculate statistics for each group<br>
+                    compare to see if there is a significant difference between the two (2 sample test)<br>
+                    matched pairs: collect two pieces of data from the same observational unit (usually an intrinsically paired observational unit or a before and after type situation)<br>
+                    analyze the differences between the two pieces of data as a statistic for significance (paired test)<br>
+                    What does blocking eliminate in an experiment?<br>
+                    Blocking helps eliminate confounding variables<br>
+                </p1>
+            </div>
         </div>
         <div id="unit3" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')">
@@ -130,9 +248,192 @@
                 Probability & Simulations
                 Topic 11 & Simulations
             </button> 
-            <h1>Topic 1</h1>
-            <div class = "intro_vocab/diagrams">
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    Probability measures how likely it is for an event to occur<br>
+                    Theoretical vs. Empirical Probability<br>
+                    The theoretical probability of an event is the probability based on the assumption that all outcomes have an equal chance of occurring<br>
+                    Based on theories and hypotheses<br>
+                    The empirical probability of an event is based on the actual experimental data observations<br>
+                    Based on observations or experiences<br>
+                    The set S of all possible outcomes of an experiment is called the sample space<br>
+                    Any subset of a sample space is called an event, E<br>
+                    In a sample space with equally likely outcomes, the probability of an event of a sample space is defined as: P(E)=n(E)n(S), where:<br>
+                    P(E) = the probability of E<br>
+                    n(X) = the number of x<br>
+                    Organization Tools and Diagrams<br>
+                    Tables<br>
+                    A way to organize sample spaces and outcomes<br>
+                    Tables can be used to examine the relationship between 2 categorical variables, displaying every possible outcome<br>
+                    Trees<br>
+                    Most useful when there is a sequence of events<br>
+                    First, determine the sequence of events, and create branches for each next possible event<br>
+                    If the branch segments have equal chance, you can determine the probability by just counting<br>
+                    Venn Diagrams<br>
+                    Made up of 2 or more circles<br>
+                    Shows the probability in relation between events<br>
+                    Components of a venn diagram:<br>
+                    Rectangle S, the sample space<br>
+                    Circles A and B, specific events in the sample space<br>
+                    English  Probability<br>
+                    The english word not involves complements and is designated Ac or A'<br>
+                    The english word and involves set intersection, and is designated <br>
+                    The english word or involves set union, and is designated <br>
+                    Probability asks you about the chance that something specific will happen when you know the possibilities. Statistics asks you to draw a sample, describe the sample, and then make inferences about the population based on the information collected about the sample.<br>
+                    Blocking helps eliminate confounding variables<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    P(E2|E1)<br>	
+                    The probability that an event E2 occurs given that an event E1 has occurred<br>
+                    You can find this in a table by isolating the E1 column, where you take the number of E2 in that column divided by the total in the column<br>
+                    Two-way tables<br>
+                    Organizes the counts of the categories of two variables<br>
+                    Allows you to directly read conditional probability and the relationship between two categorical variables<br>
+                    Mathematical Probability Rules:<br>
+                    Complement rule: P(Ac)=1-P(A)<br>
+                    General addition rule: P(AB)=P(A)+P(B)-P(AB)<br>
+                    General multiplication rule: P(AB)=P(A) · P(B|A)<br>
+                    For any two events A and B with P(A)0, P(B|A)=P(AB)P(A)<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    1 Mutually Exclusive<br>
+                    Definition 0.1 — We call two events mutually exclusive if they have no chance<br>
+                    of occuring at the same time. More formally, A and B are mutually exclusive if<br>
+                    P(A ∩ B) = 0.<br>
+                    This is significant, as it allows us to simplify probabilities just from the fact that two<br>
+                    events are mutually exclusive. The following theorem applies if and only if events A and<br>
+                    B are mutually exclusive.<br>
+                    Theorem 0.2. Addition of Mutually Exclusive Events: P(A ∪ B) = P(A) + P(B)<br>
+                    Example 0.3. Find the probability that a twenty-sided die rolls a prime number or<br>
+                    a multiple of four.<br>
+                    Walkthrough.<br>
+                    (a) Are these events mutually exclusive?<br>
+                    (b) Use the theorem above.<br>
+                    Definition 0.4 — If an event B occurs with different probability when an event A<br>
+                    occurs than when A doesn’t, it is said that B is dependent on A. More formally, A<br>
+                    and B are dependent if P(A) ̸= P(A|B).<br>
+                    1<br>
+                    RS-W11-D1 Updated Wed Nov 1<br>
+                    Definition 0.5 — If the inverse of this (if B happens with the same probability<br>
+                    regardless of A) is true, A and B are independent. More formally, A and B are<br>
+                    independent if P(A) = P(A|B).<br>
+                    Only independent events are really useful here, as they help to simplify things, as<br>
+                    follows.<br>
+                    Theorem 0.6. Multiplication of Independent Events: P(A ∩ B) = P(A) · P(B).<br>
+                    Note that the above theorem holds only if we have independent events.<br>
+                    Remark 0.7. Independent ̸= Mutually Exclusive. Just because two events<br>
+                    don’t effect each other doesn’t mean they can’t both happen and vice versa.<br>
+                    Example 0.8. In a drawer, Shreyas has 10 milk chocolates, 7 dark chocolates, and<br>
+                    5 caramel choclates. He takes one out at random every day.<br>
+                    (a) If he eats the candy each day at school, what is the probability he eats dark<br>
+                    chocolate two days in a row?<br>
+                    (b) If he forgets to eat the candy each day, then returning it back to the drawer,<br>
+                    what is the probability he takes dark chocolate two days in a row?<br>
+                    Walkthrough.<br>
+                    (a) Are these events independent or dependent? Reason your way through it.<br>
+                    (b) Use the theorem above.<br>
+                    (c) Warning: The probabilites for day 2 are different in both parts.<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    Fundamental counting principle<br>
+                    If one event has m possible outcomes and a second event has n possible outcomes, then there are mn total possible outcomes for the two events together.<br>
+                    Factorial notation<br>
+                    n!=n(n-1)(n-2)....321<br>
+                    Reads as "n factorial"<br>
+                    0!=1 by definition<br>
+                    Ex., 3!=3*2*1=6<br>
+                    Permutations<br>
+                    nPr=n!(n-r)! for 0rn<br>
+                    The number of permutations of n items of a set arranged r items at a time<br>
+                    Order matters<br>
+                    Combinations<br>
+                    nCr=n!r!(n-r)! for 0rn<br>
+                    The number of combinations of n items in a set chosen r items at a time<br>
+                    Reads as “n choose r”<br>
+                    Order does not matter<br>
+                    Important: When seeing the word “and” in the context of a permutation or a combination, you multiply probabilities because they are dependent on each other. When seeing the word “or” in the context of a permutation or combination, you add individual probabilities because they are independent instances<br>
+                    Example: If a committee of five is selected at random from a group of 9 people (6 girls, 3 boys, what is the probability that it will have…<br>
+                    John and Mary as two of the 5 people?<br>
+                    1C1*1C1*7C3=35<br>
+                    9C5=126<br>
+                    35126<br>
+                    Explanation: There is only one John and one Mary, so you are choosing 1 out of 1 twice and you are choosing 3 out of 7 for the remaining seats. Then, you multiply the probabilities because they are dependent on each other<br>
+                    Exactly 3 girls and 2 boys?<br>
+                    6C3*3C2=60<br>
+                    9C5=126<br>
+                    60126 = 3063<br>
+                    Explanation: Since you are choosing 3 girls out of 6 exactly, those are accounting for 3 of your seats while the remaining two have to be boys, choosing 2 out of 5. Then, you multiply the probabilities because they are dependent on each other<br>
+                    At least 3 girls?<br>
+                    (6C3*3C2)+(6C4*3C1)+(6C5*3C0)=111<br>
+                    9C5=126<br>
+                    111126<br>
+                    Explanation: 	There are multiple instances where you can choose at least 3 girls out of 5 because this accounts for the times you choose 3 girls, 4, or 5 for the 5 seats. These events are separate from each other, so you add their individual probabilities that you find by multiplying the chances of choosing a girl that many times by choosing the remaining seats from the boys that are remaining<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    Probability<br>
+                    Defining what an unlikely event is typically is a matter of personal judgment<br>
+                    For our purposes as a class, a probability of 0.1 (10%) or less will be the definition of an unlikely event<br>
+                    A probability of 0.05 (5%) or less will be considered a rare event<br>
+                    The Law of Large Numbers: a chance process is impossible to predict in the short term, but as the total amount of repetitions increases for any chance process, the chances that an event will occur will approach a single value<br>
+                    Note: just because the probability of flipping either heads or tails approaches 50%, this does not necessarily mean that that is the guaranteed probability<br>
+                    Probability: The probability of any outcome of a chance process is a number between 0 and 1 that describes the proportion of times the outcome would occur in a very long series of repetitions <br>
+                    An expected value is interpreted as the long-run average value of a numerical random process<br>
+                    Probabilities don’t always hold true in the short run. Remember, probability is a long-term property. <br>
+                    Simulations<br>
+                    Simulation: an artificial representation of a random process used to study the process's long-term properties<br>
+                    When what we want to investigate is not easy to carry out (costly, dangerous, unnecessary, etc.), we can create a simulation to run the experiment. Steps below depict creating a simulation<br>
+                    Identify the real-world activity that is to be repeated<br>
+                    Link the activity to one or more random numbers<br>
+                    Describe how you will use the random number assignment to complete a full trial<br>
+                    State the response variable<br>
+                    Run several trials<br>
+                    Collect and summarize the results of all the trials<br>
+                    State your conclusion<br>
+                    Null hypothesis: denoted by H0, the null hypothesis is a statement of “no effect” or “no difference” in the outcome of the experiment with the treatment<br>
+                    States that the parameter (the value we are studying; p, proportion for categorical data and μ, mean for quantitative data) is equal to a specific, hypothesized value - that action has no effect on the value<br>
+                    H0:p=p0 where p is the population proportion of interest and p0 is replaced by the conjecture value of interest<br>
+                    Alternative hypothesis: denoted by Ha, it states what researchers expect the treatment of the experiment to do or hope is true about the parameter of interest. <br>
+                    Ha:p>p0<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    Probability<br>
+                    Defining what an unlikely event is typically is a matter of personal judgment<br>
+                    For our purposes as a class, a probability of 0.1 (10%) or less will be the definition of an unlikely event<br>
+                    A probability of 0.05 (5%) or less will be considered a rare event<br>
+                    The Law of Large Numbers: a chance process is impossible to predict in the short term, but as the total amount of repetitions increases for any chance process, the chances that an event will occur will approach a single value<br>
+                    Note: just because the probability of flipping either heads or tails approaches 50%, this does not necessarily mean that that is the guaranteed probability<br>
+                    Probability: The probability of any outcome of a chance process is a number between 0 and 1 that describes the proportion of times the outcome would occur in a very long series of repetitions <br>
+                    An expected value is interpreted as the long-run average value of a numerical random process<br>
+                    Probabilities don’t always hold true in the short run. Remember, probability is a long-term property. <br>
+                    Simulations<br>
+                    Simulation: an artificial representation of a random process used to study the process's long-term properties<br>
+                    When what we want to investigate is not easy to carry out (costly, dangerous, unnecessary, etc.), we can create a simulation to run the experiment. Steps below depict creating a simulation<br>
+                    Identify the real-world activity that is to be repeated<br>
+                    Link the activity to one or more random numbers<br>
+                    Describe how you will use the random number assignment to complete a full trial<br>
+                    State the response variable<br>
+                    Run several trials<br>
+                    Collect and summarize the results of all the trials<br>
+                    State your conclusion<br>
+                    Null hypothesis: denoted by H0, the null hypothesis is a statement of “no effect” or “no difference” in the outcome of the experiment with the treatment<br>
+                    States that the parameter (the value we are studying; p, proportion for categorical data and μ, mean for quantitative data) is equal to a specific, hypothesized value - that action has no effect on the value<br>
+                    H0:p=p0 where p is the population proportion of interest and p0 is replaced by the conjecture value of interest<br>
+                    Alternative hypothesis: denoted by Ha, it states what researchers expect the treatment of the experiment to do or hope is true about the parameter of interest. <br>
+                    Ha:p>p0<br>
+                </p1>
+            </div>
         </div>
+
         <div id="unit4" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')"> 
                 Definitions for Normal Distribution Curve
@@ -142,15 +443,80 @@
                 Using Ti-84 for Distributions
                 Topic 12
             </button>
-            <button class="topic" onClick = "openTopic('topic3')">
-                CLT, Sample versus Population
-                Topic 14
-            </button>
             <button class="topic" onClick = "openTopic('topic4')"> 
                 Significance, Sources of Variation
                 Topic 15
             </button> 
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    Learn the alphabet with RS1 (Part 1):<br>
+                    m is for mean: the average of a distribution<br>
+                    o is for observation: the datapoint in question<br>
+                    s is for standard deviation: the relevant measure of distance here, used to determine how far an observation is from the mean (is a number equalling the approximate average distance of any given datapoint to the mean)<br>
+                    n is for normal distribution: a distribution which is roughly symmetrical and nicely mound shaped, for which the empirical rule applies<br>
+                    e is for empirical rule: a rule stating that in a normal distribution, 68% of values lie within one standard deviation of the mean, 95% within two, and 99.7% within three<br>
+                    z is for z-score: a measure of how many standard deviations away a given observational unit is from the mean: (observation - mean)/(standard deviation)<br>
+                    c is for calculus comparison using standardization: while you cannot compare observations of different distributions directly, you can first scale them by calculating their z-score and then compare them, giving a more accurate comparison<br>
+                    a is for area underneath the curve: calculus sometimes, you may want to approximate what percent of a normal distribution falls above, below, or within a certain range without being able to use the empirical rule - to do so, we can calculate the area under the curve as a percentage of the total area<br>
+                    p is for probabilities: using technology or a table, we can find the probability that any given observational unit lies within a z-score range (by expected value, this is also the approximate percentage of the normal distribution within the range)<br>
+                    i is for inverse: sometimes, we might want to go backwards - getting the z-score from a percentage. thankfully, technology has us covered again, and we can use the inverse norm function to find the z-score such that a given percentage of the normal distribution lies below it<br>
+                    g is for graphing calculator: use 2ND, VARS, 3 to pull up the invNorm function and enter the parameters of the area percentage, mean, and standard deviation to get the z-score with that area percentage below it. <br>
+                    h is for hacks to figure out areas: <br>
+                    1. the area percent above a certain z-score is equal to [1 - the area percent below it] (since the total area adds up to one)<br>
+                    2. the distribution is symmetric around the z-score of 0, so you can halve a symmetric area and halve the percentage<br>
+                    3. you can subtract - for example to get the area between 1 and 2 standard deviations you can take the area less than 2 and subtract the area less than 1<br>
+                    w is for wow you made it to the end of this: stay tuned for the other half of the alphabet next time (help i left myself all the bad letters)<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    Distinguishing characteristics of a normal distribution:<br>
+                    They are symmetric<br>
+                    They are mound-shaped<br>
+                    They follow a bell-shaped curve<br>
+                    On a TI-84, use the normalcdf function to find normal distribution probabilities:<br>
+                    Press [2nd] [VARS] [2] to open the function<br>
+                    Enter the lower boundary of the area you want<br>
+                    Enter the upper boundary<br>
+                    Enter the mean of the distribution (leave blank for 0)<br>
+                    Enter the standard deviation of the distribution (leave blank for 1)<br>
+                    If you use normalcdf, you must specify the mean and standard deviation when writing your final probability/area percentage<br>
+                    Ex., P(x&gt;2500)=0.0802 given that the mean = 3300 and the standard deviation = 570<br>
+                    There are 2 ways to check for population normality from sample data:<br>
+                    A normal probability plot (normal quantile plot) graphs the observed data against the expected theoretical data. If your data follows a roughly straight line on this plot, then it is approximately normal. This can be done by pasting your data into Rossman/Chance<br>
+                    You can also use your TI-84 to create a normal probability plot:<br>
+                    [STAT] [1] to open the list-edit screen<br>
+                    Cursor onto the label L1, then [CLEAR] [ENTER]<br>
+                    Enter all data values in L1<br>
+                    [2nd] [Y=] (makes STAT PLOT) [ENTER][ENTER]<br>
+                    [▼] [▶] [▶] [▶] [▶] [▶] [ENTER] [▼]<br>
+                    [2nd] [1] (makes L1) [ENTER] [ENTER] [▼] [ENTER]<br>
+                    [ZOOM] [9] (makes ZoomStat)<br>
+                    Draw a parallel dot plot and boxplot of the data. If the data is approximately normal, the dotplot will be symmetric and mound-shaped, and the boxplot will also be symmetric. It is necessary to make and examine both plots<br>
+                    On a TI-84, you cannot create a parallel dotplot, so you can choose to make a histogram for comparison instead<br>
+                    Things to know (when using a normal probability table):<br>
+                    When you want to find the probability to the right of the z-score, subtract the probability to the left<br>
+                    When you want to find the probability between two values, subtract the probabilities from each other<br>
+                    If a z-score is too extreme to appear in the table, use a shaded sketch to determine whether the relevant probability is less than 0.0002 or greater than 0.9998<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    Possible sources of variation in a sampling distribution mean versus a population mean include<br>
+                    Bias: if the sampling method was biased (eg not simple random sample)<br>
+                    Chance Error: the unlikely but possible chance that the random samples have all turned out skewed a certain way<br>
+                    Statistical Significance: (only applies when the other two do not) your sampling distribution mean is so different from the population mean that we cast doubt on the population mean<br>
+                    A sample result is thus said to be statistically significant if the probability of that result occurring by pure chance is extremely low (usually < 0.05)<br>
+                    A result occurring that would occur by chance with probability < 0.01 is highly significant<br>
+                    Since we know by the CLT that sampling distributions tend to be normal if we have a large enough sample, we can use z-scores or the empirical rule to estimate the probability of something occurring<br>
+                    The CLT gives us the mean and standard deviation for our sampling distribution, so we can calculate the probability of a normal distribution being above the particular z-score (if our sampling distribution mean is greater than the population mean) or below (if our sampling distribution mean is less than the population mean)<br>
+                    Statistical confidence is how close you expect a sample distribution statistic to come to the corresponding population parameter, determined by the sample size (since this determines sample distribution standard deviation) and how confident you would like to be (how many z-scores away your interval needs to be)<br>
+                    Ensure CLT is applicable before applying it<br>
+                    You must either have a normal population distribution or n >= 30<br>
+                </p1>
+            </div>
         </div>
+
         <div id="unit5" class="unitView" hidden>
             <button class="topic" onClick = "openTopic('topic1')"> 
                 T & Z-Confidence Level/Interval
@@ -168,7 +534,123 @@
                 Matched Pairs Significance Tests
                 Topic 23
             </button>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    A confidence interval communicates how accurate a point estimate is likely to be, based on standard deviation<br>
+                    A confidence interval starts with the point estimate and then adds or subtracts a margin of error<br>
+                    xz*σn<br>
+                    When the population standard deviation is unknown, the sample standard deviation can be used as a close estimate, where the standard error is: sσn<br>
+                    The more confident we wish the be, the larger (and less useful) our interval will be<br>
+                    The more information we have about a population (larger sample size), the less new information (additional data) affects the confidence interval<br>
+                    A 95% confidence interval means that we can be 95% sure that the population mean lies within our interval<br>
+                    Confidence intervals estimate the value of a population mean; they do not estimate the value of a sample statistic or of an individual observation<br>
+                    The whole point of a confidence interval is to estimate the unknown value of μ based on the observed value of x̄<br>
+                    t-distribution<br>
+                    Characterized by degrees of freedom<br>
+                    Mound-shaped, centered at 0, wider than normal distributions<br>
+                    Degrees of freedom = sample size - 1<br>
+                    df=n-1<br>
+                    For an x% confidence interval, the critical value t* is the value such that x% of the area under the curve is between -t* and t*<br>
+                    Look up this value in a t-table<br>
+                    Confidence-interval for a population mean (t-interval)<br>
+                    xt*sn<br>
+                    Where t* is the appropriate critical value from the t-distribution with n-1 degrees of freedom for the desired confidence level<br>
+                    Conditions to use a t-interval:<br>
+                    The sample was derived from the population via SRS<br>
+                    Either the sample size is large (n30) or the population is normally distributed<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    Test of Significance<br>
+                    Give a description of the parameter, being sure to identify the type of number (e.g.., a mean or a proportion), the variable, and the population<br>
+                    Example: The parameter of interest is the average time in seconds that a student estimated elapsed while the clip of "ABC" was played. Using μ to represent it<br>
+                    State competing claims about the parameter of interest. The null hypothesis states the parameter is equal to a specific value<br>
+                    H0: parameter = hypothesized value (statement of no effect)<br>
+                    Example: H0: μ = 10<br>
+                    The alternative hypothesis states what the researchers suspect or hope to be true about the parameter. The form of the alternative hypothesis is determined by the research question before the samples are collected<br>
+                    Ha: parameter < hypothesized value<br>
+                    Ha: parameter > hypothesized value<br>
+                    Ha: parameter ≠ hypothesized value<br>
+                    Specify the behavior of the sampling distribution under the null hypothesis. Typically involving checking some technical conditions that need to be met, such as the Central Limit Theorem. The initial two important conditions to check are a simple random sample (SRS) and the sample size/normality of the distribution. Conditions will be checked assuming the null hypothesis is true<br>
+                    Conditions for CLT:<br>
+                    Simple random sample (assumed implemented if unmentioned)<br>
+                    n > 30 (If false, check if the distribution is normally distributed. If not normally distribution, proceed with caution)<br>
+                    Independent where n < 10% of overall population size (assume that it is independent but make sure to state this in conditions)<br>
+                    Draw a well-labeled sketch with a mean of the hypothesized value and a standard deviation of s√n, where s is the standard deviation of the sample. Also mark the observed mean value of your sample<br>
+                    Calculate a test statistic to measure the discrepancy between the observed statistic and the hypothesized value of the parameter. If the discrepancy is large, we have evidence against a null hypothesis<br>
+                    The test statistic can be found by seeing how many standard deviations the sample mean is away from the population mean<br>
+                    t =  x-μs/√n <br>
+                    Calculate the p-value, which is the probability, assuming the null hypothesis to be true, of obtaining a test statistic at least as extreme as the one actually observed. Extreme meaning “in the direction of the alternative hypothesis.”<br>
+                    An alternative hypothesis of “not equal” means that you need the probability in both tails<br>
+                    A positive t-statistic indicates finding the probability above it in the t-distribution with the degrees of freedom. You then multiply that by 2 in order to calculate the probability in both tails (done with a t-table or a calculator)<br>
+                    Summarize your conclusion in context. State a test decision or a comment evaluating the strength of evidence against the null hypothesis where the test decision needs to be made.<br>
+                    If the p-value is small, reject the null hypothesis<br>
+                    p-value below 0.05 but above 0.01 constitutes reasonably strong evidence against the null hypothesis<br>
+                    p-value below 0.01 constitutes very strong evidence against the null hypothesis<br>
+                    If the p-value is high, do not reject the null hypothesis<br>
+                    p-value above .10 constitutes little to no evidence against the null hypothesis<br>
+                    p-value below 0.10 but above 0.05 constitutes moderately strong evidence against the null hypothesis<br>
+                    In some studies, the researcher can decide in advance how small the p-value needs to be to support a null hypothesis. This cutoff is called a significance level, denoted by 𝞪. A smaller significance level indicates stricter standards. If a researcher specifies a level of significance in advance, you have to say you fail or reject the hypothesis at a certain level.<br>
+                    Another common expression is to say that the data are statistically significant if it is unlikely to have occurred by chance or sampling variability alone.<br>
+                    Proceed with responding to the research question and whether you have evidence for the alternative hypothesis or not (restate final conclusions towards research question)<br>
+                    Hypotheses are always about parameters, not statistics<br>
+                    The alternative hypothesis should be composed before data is collected (unbiased)<br>
+                    The denominator of a test statistic is the standard error denoted by s√n<br>
+                    When calculating the p-value for a two-sided alternative, include the total area in both tails of the t-distribution beyond the value of the test statistic. You can calculate this total area by doubling the area in the right tail.<br>
+                    A low p-value indicates strong evidence against a null hypothesis<br>
+                    You cannot generalize to a larger population if the sample was not random, in which case you can generalize to smaller, more representative populations<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-green">
+                <p1>
+                    tl; dr: it’s basically the same as before, just with two variables<br>
+                    tl; dr: it’s basically the same as before, just with two variables<br>
+                    main differences (by step):<br>
+                    state two parameters, one for each sample group<br>
+                    null hypothesis is always µ1 = µ2; choices for alternative hypothesis are<br>
+                    µ1 > µ2<br>
+                    µ1 < µ2<br>
+                    µ1 ≠ µ2<br>
+                    for the independence and randomness conditions, you now should either have that each sample was taken using an SRS or the two sample groups came from one large group randomly assigned to two treatment groups <br>
+                    different formula: t=x1-x2s21n1+s22n2<br>
+                    basically the same, just make sure to take the degrees of freedom of the lower of n1 and n2 for your t-test<br>
+                    again, basically the same, just make sure your context is correct for the scenaritl; dr: it’s basically the same as before, just with two variables<br>
+                    main differences (by step):<br>
+                    state two parameters, one for each sample group<br>
+                    null hypothesis is always µ1 = µ2; choices for alternative hypothesis are<br>
+                    µ1 > µ2<br>
+                    µ1 < µ2<br>
+                    µ1 ≠ µ2<br>
+                    for the independence and randomness conditions, you now should either have that each sample was taken using an SRS or the two sample groups came from one large group randomly assigned to two treatment groups <br>
+                    different formula: t=x1-x2s21n1+s22n2<br>
+                    basically the same, just make sure to take the degrees of freedom of the lower of n1 and n2 for your t-test<br>
+                    again, basically the same, just make sure your context is correct for the scenario <br>
+                    confidence interval (measured for µ1 - µ2) :<br>
+                    different formula: (x1-x2)t*dts21n1+s22n2<br>
+                    make sure to get the t* value corresponding to the lesser degrees of freedom<br>                            
+                    confidence interval (measured for µ1 - µ2) :<br>
+                    different formula: (x1-x2)t*dts21n1+s22n2<br>
+                    make sure to get the t* value corresponding to the lesser degrees of freedom <br>           
+                    sure to get the t* value corresponding to the lesser degrees of freedom<br>
+                </p1>
+            </div>
+            <div class = "formatted-paragraph-blue">
+                <p1>
+                    🥳 Wooo last topic of RS1!<br>
+                    If the sampling or experimental design is paired, then use paired t-procedures. If the samples are drawn independently for the two groups, or if randomization is used to assign subjects to separate treatment groups, use two-sample t-procedures.<br>
+                    Data are collected with a paired design when there is a link between each observation in one group with a specific observation in another<br>
+                    A paired t-procedure applies one sample t-procedures to the differences within a pair<br>
+                    H0: μd=0<br>
+                    t=xdSd/n<br>
+                    for a p-value based on a t-distribution with (n-1) degrees of freedom, where n is the number of pairs in the sample<br>
+                    xdt*Sdn​<br>
+                    confidence interval for the population mean difference μd<br>
+                    The technical conditions for paired t-procedures are the same as with a one-sample t procedure except observational units are paired and the data are differences.<br>
+                </p1>
+            </div>
         </div>
+
         <style>
 
             body{
@@ -177,7 +659,7 @@
             }
             .topic{
                 align-items: center;
-                width: 1437px;
+                width: 1455px;
                 height: 70px;
                 font-family: inherit;
                 margin-top: 20px;
@@ -210,7 +692,7 @@
                 width: 50px;
                 height: 50px;
             }
-            .tabsContainer{
+            #tabsContainer{
                 align-items: center;
                 vertical-align: center;
             }
@@ -241,6 +723,13 @@
                 border-style: solid;
                 border-radius: 20px;
                 padding: 20px;
+            }
+
+            .fixed-section {
+                overflow: hidden;
+                background-color:#cdd7fc;
+                position: fixed;
+                top: 0;
             }
         </style>
         <script>
